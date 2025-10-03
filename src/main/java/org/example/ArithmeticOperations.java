@@ -1,3 +1,5 @@
+package org.example;
+
 public class ArithmeticOperations {
     public static long factorial(int n) {
         if (n == 0 || n == 1) {

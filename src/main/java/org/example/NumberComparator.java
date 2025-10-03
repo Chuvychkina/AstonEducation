@@ -1,3 +1,5 @@
+package org.example;
+
 public class NumberComparator {
     public static double performOperation(int a, int b, char operation) {
         return switch (operation) {

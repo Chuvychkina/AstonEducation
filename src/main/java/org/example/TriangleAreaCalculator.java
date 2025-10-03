@@ -1,3 +1,5 @@
+package org.example;
+
 public class TriangleAreaCalculator {
     public static String compareNumbers(int a, int b) {
         if (a > b) {
