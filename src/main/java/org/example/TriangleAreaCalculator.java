@@ -1,13 +1,7 @@
 package org.example;
 
 public class TriangleAreaCalculator {
-    public static String compareNumbers(int a, int b) {
-        if (a > b) {
-            return a + " больше " + b;
-        } else if (a < b) {
-            return a + " меньше " + b;
-        } else {
-            return a + " равно " + b;
-        }
+    public static double triangleArea(double base, double height) {
+        return (base * height) / 2;
     }
 }

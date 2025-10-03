@@ -1,7 +1,11 @@
 package org.example;
 
 public class FactorialCalculator {
-    public static double triangleArea(double base, double height) {
-        return (base * height) / 2;
+    public static long factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
     }
 }
