@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class NumberComparator {
     /**
      * Сравнивает два целых числа: возвращает -1 если a < b, 0 если a == b, 1 если a > b.

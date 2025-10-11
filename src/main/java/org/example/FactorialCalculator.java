@@ -1,7 +1,5 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class FactorialCalculator {
     /**
      * Вычисляет факториал числа n (n!).
