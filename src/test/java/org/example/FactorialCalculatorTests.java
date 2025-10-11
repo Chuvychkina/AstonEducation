@@ -1,34 +1,32 @@
 package org.example;
 
 
+import org.testng.annotations.Test;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
-
-
-import static org.junit.Assert.assertThrows;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertThrows;
 
 public class FactorialCalculatorTests {
 
     @Test
     public void testFactorialOfZero() {
-        Assertions.assertEquals(1, FactorialCalculator.factorial(0));
+        assertEquals(FactorialCalculator.factorial(0), 1);
     }
 
     @Test
     public void testFactorialOfOne() {
-        Assertions.assertEquals(1, FactorialCalculator.factorial(1));
+        assertEquals(FactorialCalculator.factorial(1), 1);
     }
 
     @Test
     public void testFactorialOfPositiveNumber() {
-        Assertions.assertEquals(120, FactorialCalculator.factorial(5));
-        Assertions.assertEquals(720, FactorialCalculator.factorial(6));
+        assertEquals(FactorialCalculator.factorial(5), 120);
+        assertEquals(FactorialCalculator.factorial(6), 720);
     }
 
     @Test
     public void testFactorialOfLargeNumber() {
-        Assertions.assertEquals(2432902008176640000L, FactorialCalculator.factorial(20)); // Максимум для long
+        assertEquals(FactorialCalculator.factorial(20), 2432902008176640000L); // Максимум для long
     }
 
     @Test
