@@ -1,37 +1,43 @@
 package org.example;
 
+
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 
 public class ArithmeticOperationsTests {
+
     @Test
-    public void testFactorialOfZero() {
-        assertEquals(1, ArithmeticOperations.factorial(0));
+    public void testAdd() {
+        assertEquals(15, ArithmeticOperations.add(10, 5));
+        assertEquals(-5, ArithmeticOperations.add(-10, 5));
     }
 
     @Test
-    public void testFactorialOfOne() {
-        assertEquals(1, ArithmeticOperations.factorial(1));
+    public void testSubtract() {
+        assertEquals(5, ArithmeticOperations.subtract(10, 5));
+        assertEquals(-15, ArithmeticOperations.subtract(-10, 5));
     }
 
     @Test
-    public void testFactorialOfTwo() {
-        assertEquals(2, ArithmeticOperations.factorial(2));
+    public void testMultiply() {
+        assertEquals(50, ArithmeticOperations.multiply(10, 5));
+        assertEquals(-50, ArithmeticOperations.multiply(-10, 5));
     }
 
     @Test
-    public void testFactorialOfThree() {
-        assertEquals(6, ArithmeticOperations.factorial(3));
+    public void testDivide() {
+        assertEquals(2.0, ArithmeticOperations.divide(10, 5));
+        assertEquals(-2.0, ArithmeticOperations.divide(-10, 5));
+        assertEquals(0.5, ArithmeticOperations.divide(5, 10));
     }
 
     @Test
-    public void testFactorialOfFour() {
-        assertEquals(24, ArithmeticOperations.factorial(4));
-    }
-
-    @Test
-    public void testFactorialOfFive() {
-        assertEquals(120, ArithmeticOperations.factorial(5));
+    public void testDivideByZero() {
+        assertThrows(ArithmeticException.class, () -> ArithmeticOperations.divide(10, 0));
     }
 }
+
