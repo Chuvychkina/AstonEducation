@@ -1,5 +1,7 @@
-package org.example;
+package org.example.lesson_7;
 
+import org.example.ArithmeticOperations;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -7,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ArithmeticOperationsTests {
     @Test
     public void testFactorialOfZero() {
-        assertEquals(1, ArithmeticOperations.factorial(0));
+        Assertions.assertEquals(1, ArithmeticOperations.factorial(0));
     }
 
     @Test
