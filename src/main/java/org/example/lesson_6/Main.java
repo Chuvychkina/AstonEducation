@@ -2,7 +2,7 @@ package org.example.lesson_6;
 
 import java.util.*;
 
-import static lesson_6.Decanat.*;
+import static org.example.lesson_6.Decanat.*;
 
 
 public class Main {
