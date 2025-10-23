@@ -1,5 +1,6 @@
 package PageObject;
 
+import io.qameta.allure.Step;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -93,7 +94,7 @@ public class SiteMtsSeleniumPage {
     @FindBy(xpath = "(//span[contains(text(),'Оплатить')])[1]")
     private WebElement submitButton;
 
-
+@Step("Переход на страницу к разделу")
     public SiteMtsSeleniumPage goToPage(String url) {
         driver.get(url);
         acceptButton.click();
@@ -162,6 +163,7 @@ public class SiteMtsSeleniumPage {
         checkElementVisibility(belkartLogo, "Белкарт");
     }
 
+    @Step("Проверка формы услуги связи")
     public SiteMtsSeleniumPage checkСommunicationServicesForm() {
         checkElementVisibility(phoneNumberInput, "Поле номера телефона");
         checkElementVisibility(sumInput, "Поле суммы");
@@ -170,12 +172,14 @@ public class SiteMtsSeleniumPage {
         return this;
     }
 
+    @Step("Проверка элементов формы оплаты")
     public SiteMtsSeleniumPage checkIframeElementsIsVisible() {
         checkElementVisibility(payCommunicationServices, "Оплата: Услуги связи");
         checkElementVisibility(payNumber, "Номер:375297777777");
         return this;
     }
 
+    @Step("Установка значений формы услуги связи")
     public SiteMtsSeleniumPage setValuesСommunicationServicesForm() {
         phoneNumberInput.clear();
         phoneNumberInput.sendKeys("297777777");
@@ -190,6 +194,8 @@ public class SiteMtsSeleniumPage {
         continueButton.click();
         return this;
     }
+
+    @Step("Переключение на форму оплаты")
     public SiteMtsSeleniumPage switchToFrame() {
         // Жди iframe и переключайся на него
         WebElement iframe = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe[@class='bepaid-iframe']")));
@@ -201,6 +207,7 @@ public class SiteMtsSeleniumPage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", webElement);
     }
 
+    @Step("Проверка видимости элементов")
     protected SiteMtsSeleniumPage checkElementVisibility(WebElement webElement, String elementName) {
         wait.until(ExpectedConditions.visibilityOf(webElement));
         scrollToElement(webElement);
@@ -216,6 +223,7 @@ public class SiteMtsSeleniumPage {
         Assertions.assertTrue(Objects.requireNonNull(driver.getCurrentUrl()).contains(expectedUrlPart), "Ссылка не привела к ожидаемой странице");
     }
 
+    @Step("Проверка элементов формы оплаты")
     public void assertTextIframeElements() {
         String payComServText = payCommunicationServices.getText();
         String payNumberText = payNumber.getText();
