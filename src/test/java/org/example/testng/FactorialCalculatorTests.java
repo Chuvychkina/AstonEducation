@@ -1,12 +1,13 @@
-package org.example;
+package org.example.testng;
 
 
+import org.example.FactorialCalculator;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertThrows;
 
-public class FactorialCalculatorJunitTests {
+public class FactorialCalculatorTests {
 
     @Test
     public void testFactorialOfZero() {

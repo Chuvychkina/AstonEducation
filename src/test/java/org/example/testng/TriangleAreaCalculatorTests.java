@@ -1,15 +1,17 @@
-package org.example;
+package org.example.testng;
 
 
+import org.example.TriangleAreaCalculator;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertThrows;
 
-public class TriangleAreaCalculatorJunitTests {
+public class TriangleAreaCalculatorTests {
     @Test
     public void testAreaWithPositiveValues() {
-        assertEquals(TriangleAreaCalculator.area(10, 5), 25.0);
+        Assert.assertEquals(TriangleAreaCalculator.area(10, 5), 25.0);
         assertEquals(TriangleAreaCalculator.area(5, 5), 12.5);
     }
 
