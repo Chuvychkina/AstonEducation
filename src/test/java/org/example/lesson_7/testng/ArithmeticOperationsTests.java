@@ -1,4 +1,4 @@
-package org.example.testng;
+package org.example.lesson_7.testng;
 
 import org.example.lesson_7.ArithmeticOperations;
 import org.testng.annotations.Test;

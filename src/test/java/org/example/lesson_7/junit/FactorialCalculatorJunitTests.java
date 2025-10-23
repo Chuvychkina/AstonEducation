@@ -1,4 +1,4 @@
-package org.example.junit;
+package org.example.lesson_7.junit;
 
 
 
