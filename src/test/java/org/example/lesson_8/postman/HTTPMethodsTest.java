@@ -1,4 +1,4 @@
-package org.example.postman;
+package org.example.lesson_8.postman;
 
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
