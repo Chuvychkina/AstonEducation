@@ -1,15 +1,18 @@
-package org.example;
+package org.example.testng;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import org.example.TriangleAreaCalculator;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
-public class TriangleAreaCalculatorJunitTests {
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertThrows;
+
+public class TriangleAreaCalculatorTests {
     @Test
     public void testAreaWithPositiveValues() {
-        assertEquals(25.0, TriangleAreaCalculator.area(10, 5));
-        assertEquals(12.5, TriangleAreaCalculator.area(5, 5));
+        Assert.assertEquals(TriangleAreaCalculator.area(10, 5), 25.0);
+        assertEquals(TriangleAreaCalculator.area(5, 5), 12.5);
     }
 
     @Test
