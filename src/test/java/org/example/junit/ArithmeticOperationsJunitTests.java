@@ -1,7 +1,9 @@
-package org.example;
+package org.example.junit;
 
 
 
+import org.example.ArithmeticOperations;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -12,7 +14,7 @@ public class ArithmeticOperationsJunitTests {
 
     @Test
     public void testAdd() {
-        assertEquals(15, ArithmeticOperations.add(10, 5));
+        Assertions.assertEquals(15, ArithmeticOperations.add(10, 5));
         assertEquals(-5, ArithmeticOperations.add(-10, 5));
     }
 

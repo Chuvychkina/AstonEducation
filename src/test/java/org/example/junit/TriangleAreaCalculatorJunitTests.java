@@ -1,5 +1,7 @@
-package org.example;
+package org.example.junit;
 
+import org.example.TriangleAreaCalculator;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -8,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class TriangleAreaCalculatorJunitTests {
     @Test
     public void testAreaWithPositiveValues() {
-        assertEquals(25.0, TriangleAreaCalculator.area(10, 5));
+        Assertions.assertEquals(25.0, TriangleAreaCalculator.area(10, 5));
         assertEquals(12.5, TriangleAreaCalculator.area(5, 5));
     }
 
