@@ -1,6 +1,4 @@
-package org.example;
-
-import java.util.Scanner;
+package org.example.lesson_7;
 
 public class TriangleAreaCalculator {
     /**
