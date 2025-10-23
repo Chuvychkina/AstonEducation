@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertThrows;
 
-public class TriangleAreaCalculatorTests {
+public class TriangleAreaCalculatorJunitTests {
     @Test
     public void testAreaWithPositiveValues() {
         assertEquals(TriangleAreaCalculator.area(10, 5), 25.0);

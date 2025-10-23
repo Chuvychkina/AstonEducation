@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.*;
 
-public class NumberComparatorTests {
+public class NumberComparatorJunitTests {
     @Test
     public void testCompareEqual() {
         assertEquals(NumberComparator.compare(10, 10), 0);

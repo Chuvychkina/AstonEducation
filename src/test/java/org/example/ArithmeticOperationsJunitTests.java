@@ -6,7 +6,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertThrows;
 
 
-public class ArithmeticOperationsTests {
+public class ArithmeticOperationsJunitTests {
 
     @Test
     public void testAdd() {
