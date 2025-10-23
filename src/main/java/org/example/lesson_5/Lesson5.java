@@ -1,7 +1,8 @@
 package org.example.lesson_5;
 
-import static lesson_5.SumArray.demonstrateArrayIndexOutOfBounds;
-import static lesson_5.SumArray.sum4x4Array;
+
+import static org.example.lesson_5.SumArray.demonstrateArrayIndexOutOfBounds;
+import static org.example.lesson_5.SumArray.sum4x4Array;
 
 public class Lesson5 {
     public static void main(String[] args) {
