@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class NumberComparatorTests {
+public class NumberComparatorJunitTests {
     @Test
     public void testCompareEqual() {
         assertEquals(0, NumberComparator.compare(10, 10));

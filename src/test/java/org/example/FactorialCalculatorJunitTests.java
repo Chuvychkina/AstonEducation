@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertThrows;
 
-public class FactorialCalculatorTests {
+public class FactorialCalculatorJunitTests {
 
     @Test
     public void testFactorialOfZero() {
