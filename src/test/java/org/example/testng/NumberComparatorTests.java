@@ -1,7 +1,8 @@
 package org.example.testng;
 
 
-import org.example.TriangleAreaCalculator;
+
+import org.example.lesson_7.TriangleAreaCalculator;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

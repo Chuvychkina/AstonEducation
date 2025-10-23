@@ -1,6 +1,6 @@
 package org.example.junit;
 
-import org.example.NumberComparator;
+import org.example.lesson_7.NumberComparator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
 package org.example.junit;
 
-import org.example.TriangleAreaCalculator;
+import org.example.lesson_7.TriangleAreaCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

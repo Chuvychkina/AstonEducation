@@ -1,6 +1,6 @@
 package org.example.testng;
 
-import org.example.ArithmeticOperations;
+import org.example.lesson_7.ArithmeticOperations;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;

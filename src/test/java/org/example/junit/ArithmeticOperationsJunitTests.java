@@ -2,7 +2,7 @@ package org.example.junit;
 
 
 
-import org.example.ArithmeticOperations;
+import org.example.lesson_7.ArithmeticOperations;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

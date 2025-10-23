@@ -2,12 +2,12 @@ package org.example.junit;
 
 
 
-import org.example.FactorialCalculator;
+import org.example.lesson_7.FactorialCalculator;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import static org.junit.Assert.assertThrows;
 
 public class FactorialCalculatorJunitTests {
 
